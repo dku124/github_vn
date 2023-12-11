@@ -41,6 +41,6 @@ Vậy muốn tổng hợp các branch về nhánh chính hết: git merge
 (Đoạn này tạo ra một conflict rồi, cách giải quyết là:
   + vào file conflict xóa comment báo conflict đi và để lại những gì muốn để lại
   + git add .
-  + git commit (cmt này k cần để ghi chú vì đang xử lí conflict)
+  + git commit -m "fix conflict"
 )
 
