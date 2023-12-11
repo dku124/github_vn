@@ -31,9 +31,11 @@
   + git commit -m "contact page"
 )
 
+
 - Di chuyển lại vào nhánh khác: git checkout {branch name}
 (git checkout master
 Khi trở lại branch master thì file contact.html không tồn tại nữa, vì nó đang nằm trên branch dev.
 Vậy muốn tổng hợp các branch về nhánh chính hết: git merge
 )
 - Tổng hợp các branch lại với nhau: git merge {branchname muốn tổng hợp}
+
