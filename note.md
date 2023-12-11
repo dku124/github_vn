@@ -38,4 +38,9 @@ Khi trở lại branch master thì file contact.html không tồn tại nữa, v
 Vậy muốn tổng hợp các branch về nhánh chính hết: git merge
 )
 - Tổng hợp các branch lại với nhau: git merge {branchname muốn tổng hợp}
+(Đoạn này tạo ra một conflict rồi, cách giải quyết là:
+  + vào file conflict xóa comment báo conflict đi và để lại những gì muốn để lại
+  + git add .
+  + git commit (cmt này k cần để ghi chú vì đang xử lí conflict)
+)
 
