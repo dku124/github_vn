@@ -19,5 +19,8 @@
 - Xem các thời điểm thực hiện thay đổi: git log 
 - Xem các thời điểm thực hiện thay đổi gọn hơn trên 1 dòng (nên dùng hơn): git log --oneline
 
-- trở lại một thời điểm trong dự án: git checkout idcuacommitdo (id của commit đó)
+- trở lại một thời điểm trong dự án: git checkout {idcommit} (id của commit đó)
+- trở lại về hiện tại: git checkout {idcommit} hoặc git checkout {branchname}
 
+- kiểm tra hiện tại đang nằm trên nhánh nào: git branch
+- tạo ra một branch khác: git checkout -b {branchname}
