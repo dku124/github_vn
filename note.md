@@ -24,3 +24,9 @@
 
 - kiểm tra hiện tại đang nằm trên nhánh nào: git branch
 - tạo ra một branch khác: git checkout -b {branchname}
+( Tạo ra một nhánh mới tên là "dev" (git checkout -b dev)(và hiện tại đang nằm nằm trên nhánh này) và tạo một trang mới tên contact nằm trên nhánh dev đó luôn, như sau:
+  + git checkout -b dev
+  + tạo trang mới: contact.html
+  + git add .
+  + git commit -m "contact page"
+)
