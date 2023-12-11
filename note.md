@@ -60,3 +60,9 @@ Vậy muốn tổng hợp các branch về nhánh chính hết: git merge
 (
 - git remote add origin https://github.com/dku124/github_vn.git -> khi đó origin chính là đường link https://github.com/dku124/github_vn.git
 )
+( Thực hiện: 
++ git push https://github.com/dku124/github_vn.git master
++ git remote add origin https://github.com/dku124/github_vn.git
++ thay đổi index.html
++ push lên github: git push origin master
+)
