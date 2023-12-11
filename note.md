@@ -1,3 +1,10 @@
+( 
+- repository
+- branch
+- conflict
+- local
+- remote )
+
 - kiểm tra version git : git --version
 
 - cấu hình lại tên git: git config -g user.name tencuagit
@@ -44,3 +51,12 @@ Vậy muốn tổng hợp các branch về nhánh chính hết: git merge
   + git commit -m "fix conflict"
 )
 
+<!-- làm việc với github -->
+- git push {link git} {branch name}
+( 
++ git push https://github.com/dku124/github_vn.git master -> như thế này sẽ hơi dài
+)
+- đổi đường link git thành cú pháp ngắn hơn: git remote add origin {linkgit}
+(
+- git remote add origin https://github.com/dku124/github_vn.git -> khi đó origin chính là đường link https://github.com/dku124/github_vn.git
+)
