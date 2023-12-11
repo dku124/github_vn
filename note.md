@@ -16,4 +16,8 @@
   - ghi chú cho sự thay đổi đó: git commit -m "second commit"
 )
 
-- Xem các thời điểm thực hiện thay đổi: git log
+- Xem các thời điểm thực hiện thay đổi: git log 
+- Xem các thời điểm thực hiện thay đổi gọn hơn trên 1 dòng (nên dùng hơn): git log --oneline
+
+- trở lại một thời điểm trong dự án: git checkout idcuacommitdo (id của commit đó)
+
