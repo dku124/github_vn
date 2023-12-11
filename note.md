@@ -30,3 +30,5 @@
   + git add .
   + git commit -m "contact page"
 )
+
+- Di chuyển lại vào nhánh khác: git checkout {branch name}
