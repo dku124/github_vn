@@ -66,3 +66,19 @@ Vậy muốn tổng hợp các branch về nhánh chính hết: git merge
 + thay đổi index.html
 + push lên github: git push origin master
 )
+
+- trường hợp: tạo một branch của mình rồi đẩy code lên github này
+(tạo một local branch đẩy lên remote repo)
++  tạo một branch tên "dev2": git checkout -b dev2
++  đẩy code ở dev2 lên remote: git push -u origin dev2 (chỉ cần viết -u ở lần đầu)
+
+- trường hợp: remote có sẵn branch rồi và làm sao có thể lấy code ở branch này về được: 
+(bây h trên github đã có tổng cộng 3 branch: master, dev2, staging)
++ quay trở về nhánh master: git checkout master
++ git fetch origin
++ lấy code ở branch staging về máy local: git chechout -b staging origin/staging
++ kiểm tra lại xme đang ở nhánh nào: git branch
+
+- trường hợp: merge staging branch vào master
++ giả sử vào index.html trên nhánh staging và chỉnh sửa
++ sau đó muốn merge staging này vào master: tạo Pull Request -> merge -> confirm merge
