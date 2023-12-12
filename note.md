@@ -67,6 +67,8 @@ Vậy muốn tổng hợp các branch về nhánh chính hết: git merge
 + push lên github: git push origin master
 )
 
+- Clone remote đã có sẵn trên githup về local: git clone {linkgit}
+
 - trường hợp: tạo một branch của mình rồi đẩy code lên github này
 (tạo một local branch đẩy lên remote repo)
 +  tạo một branch tên "dev2": git checkout -b dev2
@@ -79,6 +81,13 @@ Vậy muốn tổng hợp các branch về nhánh chính hết: git merge
 + lấy code ở branch staging về máy local: git chechout -b staging origin/staging
 + kiểm tra lại xme đang ở nhánh nào: git branch
 
+
+(giả sử team member đã chỉnh sửa code, mình phải kéo về các chỉnh sửa đó)
 - trường hợp: merge staging branch vào master
+- trên remote: 
 + giả sử vào index.html trên nhánh staging và chỉnh sửa
 + sau đó muốn merge staging này vào master: tạo Pull Request -> merge -> confirm merge
+- trên local: sẽ cần kéo về các thay đổi trên remote (tại vì hiện tại máy local không có các thay đổi đó)
++ trở lại master branch: git checkout master
++ kéo về các thay đổi: git pull
+
