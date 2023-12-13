@@ -3,7 +3,9 @@
 - branch
 - conflict
 - local
-- remote )
+- remote 
+- kiểm tra liên kết thành công hay chưa: git remote -v
+)
 
 - kiểm tra version git : git --version
 
@@ -82,12 +84,18 @@ Vậy muốn tổng hợp các branch về nhánh chính hết: git merge
 + kiểm tra lại xme đang ở nhánh nào: git branch
 
 
-(giả sử team member đã chỉnh sửa code, mình phải kéo về các chỉnh sửa đó)
 - trường hợp: merge staging branch vào master
 - trên remote: 
 + giả sử vào index.html trên nhánh staging và chỉnh sửa
 + sau đó muốn merge staging này vào master: tạo Pull Request -> merge -> confirm merge
+
+(giả sử team member đã chỉnh sửa code, mình phải kéo về các chỉnh sửa đó)
 - trên local: sẽ cần kéo về các thay đổi trên remote (tại vì hiện tại máy local không có các thay đổi đó)
 + trở lại master branch: git checkout master
 + kéo về các thay đổi: git pull
 
+- git reset và git revert
+ví dụ có các commit c1, c2, c3, c4
+ + git reset --hard c2 : xóa tất cả mọi thứ sau c2 (tức là xóa c3, c4)
+ + git revert c4: tạo commit c5 là bản sao của commit c3 (điều này nhắm quay lại commit trước đó mà không phải reset)
+ 
