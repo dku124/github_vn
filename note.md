@@ -99,3 +99,7 @@ ví dụ có các commit c1, c2, c3, c4
  + git reset --hard c2 : xóa tất cả mọi thứ sau c2 (tức là xóa c3, c4)
  + git revert c4: tạo commit c5 là bản sao của commit c3 (điều này nhắm quay lại commit trước đó mà không phải reset)
  
+- trường hợp clone một git có sẵn trên mạng về muốn chỉnh sửa lại và thêm vào git của mình
++ clone git trên mạng về: git clone
++ kiểm tra xem hiện tại đang ở remote nào: git remote -v
++ đổi link remote sang một link khác (của mình): git remote set-url remote-name linkgit (link git mới)
